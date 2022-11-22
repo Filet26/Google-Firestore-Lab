@@ -1,0 +1,56 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!--- Put your firebase API js references here: --->
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="font-family: Calibri, 'Segoe UI', Arial, sans-serif">
+    <!-- START SCRIPT -->
+
+    <!-- END SCRIPT -->
+    <div class="container">
+      <div id="leaderboard">
+        <form id="userNameEntry" action="#">
+          <div id="score-info">
+            Your Name:
+            <input
+              type="text"
+              class="textInput"
+              id="userName"
+              name="userName"
+              size="20"
+              value="anon"
+            />
+          </div>
+        </form>
+        <div id="score-info">Your Score: <span id="my-score"> </span></div>
+        <div id="top-score-info">Top Score: <span id="top-score"> </span></div>
+      </div>
+
+      <div id="color-content">
+        <div id="color-square"></div>
+        <div id="color-description">&nbsp;</div>
+      </div>
+
+      <form id="coloredButtons" action="#">
+        <input class="myButtonRed" type="submit" value="Red" />
+        <input class="myButtonGreen" type="submit" value="Green" />
+        <input class="myButtonOrange" type="submit" value="Orange" />
+      </form>
+
+      <div id="debug">
+        <form id="debugForm" action="#">
+          <input class="myButtonTest" type="submit" value="Test" />
+        </form>
+        <div id="testMessage"></div>
+        <div id="testMessage2"></div>
+        <div id="mostExpensive"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
